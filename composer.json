@@ -1,0 +1,29 @@
+{
+    "name": "cscart/cart4-catalog-import",
+    "type": "cscart-addon",
+    "version": "1.0.0",
+    "require": {
+        "cscart/core": "^1.0"
+    },
+    "authors": [
+        {
+            "name": "CS-Cart",
+            "email": "info@cs-cart.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "CSCart\\Cart4CatalogImport\\": "src/"
+        }
+    },
+    "extra": {
+        "cscart": {
+            "name": "Import product catalog from version 4",
+            "description": "Import product catalog from version 4",
+            "providers": [
+                "CSCart\\Cart4CatalogImport\\Cart4CatalogImportServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
+}
